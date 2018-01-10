@@ -1,4 +1,5 @@
 from . import headers
+from . import InvalidSymbolError
 import requests
 
 class MDC(object):
@@ -8,4 +9,11 @@ class MDC(object):
 
     def price(self):
         response = requests.get(self.base_url, headers=headers)
-        return response.json()
+        if response.status_code == 200:
+            return response.json()
+        elif response.status_code == 404:
+            raise InvalidSymbolError(
+                    "The symbol does not exist."
+                    " "
+                    "Please see https://marketdata.cloud/exchanges for a list of exchanges and their securities"
+                    )

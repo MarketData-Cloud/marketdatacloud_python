@@ -6,6 +6,9 @@ MDC_API_KEY = os.environ.get('MDC_API_KEY', None)
 class APIKeyMissingError(Exception):
     pass
 
+class InvalidSymbolError(Exception):
+    pass
+
 if MDC_API_KEY is None:
     raise APIKeyMissingError(
         "All methods require an API key. See "
