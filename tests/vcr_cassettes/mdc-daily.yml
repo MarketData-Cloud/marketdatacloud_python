@@ -1,0 +1,28 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Acccept: [application/vnd.marketdatawizards.v1+json]
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authentication: [test]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://marketdata.cloud/api/prices/US0378331005.NASDAQ
+  response:
+    body: {string: !!python/unicode '{"currency":"USD","interval":"day","name":"Apple
+        Inc","prices":[{"date":"2018-01-05T00:00:00Z","open":"13.1","high":"15.9","low":"13.5","close":"15","volume":"722474"}]}'}
+    headers:
+      access-control-allow-credentials: ['true']
+      access-control-allow-methods: [GET]
+      connection: [keep-alive]
+      content-length: ['177']
+      content-type: [application/json]
+      date: ['Mon, 08 Jan 2018 16:19:58 GMT']
+      server: [nginx/1.6.2]
+      set-cookie: ['rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTU2ZWIzNzgyNzMwYmIyNzMyOTA3%0AM2NkYjcwZTlmNTAyNGQyMTA4YmNkZGIxZTAwMGY4Y2Y0MWI1OTNhNDg1ZjMG%0AOwBGSSIJY3NyZgY7AEZJIiUzOGNlMDYzY2E5ZjQ3ZDRiYWZjY2UzYTVhN2I3%0ANDZmYQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi0wZTU5ODAxODc3Y2M4YmQyNTgzM2U4MDExZjJmYzcwMTY0MGI3NDUz%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--707235a08c32561a3b9734073d4884ed92e5337c;
+          path=/; expires=Wed, 07 Feb 2018 16:19:58 -0000; HttpOnly']
+      x-content-type-options: [nosniff]
+    status: {code: 200, message: OK}
+version: 1
