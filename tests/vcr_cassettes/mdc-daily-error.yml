@@ -1,0 +1,26 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Acccept: [application/vnd.marketdatawizards.v1+json]
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.18.4]
+    method: GET
+    uri: https://marketdata.cloud/api/prices/US0378331005.NASDA
+  response:
+    body: {string: '{"message":"Not Found","description":"Invalid security symbol.","documentation_url":"https://marketdata.cloud/reference"}'}
+    headers:
+      Connection: [keep-alive]
+      Content-Length: ['121']
+      Content-Type: [text/html;charset=utf-8]
+      Date: ['Wed, 10 Jan 2018 09:52:14 GMT']
+      Server: [nginx/1.6.2]
+      Set-Cookie: ['rack.session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiRTc3MjJkYmRkMTMxY2M1YTgyZjQz%0AYTFiOTFiN2E2ZDYxMGZlYjAwY2YyMDFkMmY4NTlkMmEzMTU4ODkxNzFhYmUG%0AOwBGSSIJY3NyZgY7AEZJIiViMzQ4ODMwMmE1NGNhZmRjNjNmNWU5NDM3NDM4%0AYWFmYQY7AEZJIg10cmFja2luZwY7AEZ7B0kiFEhUVFBfVVNFUl9BR0VOVAY7%0AAFRJIi0wZTU5ODAxODc3Y2M4YmQyNTgzM2U4MDExZjJmYzcwMTY0MGI3NDUz%0ABjsARkkiGUhUVFBfQUNDRVBUX0xBTkdVQUdFBjsAVEkiLWRhMzlhM2VlNWU2%0AYjRiMGQzMjU1YmZlZjk1NjAxODkwYWZkODA3MDkGOwBG%0A--a173370238bf1fb5cfa35f9de684b8f7140b4ac1;
+          path=/; expires=Fri, 09 Feb 2018 09:52:14 -0000; HttpOnly']
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-XSS-Protection: [1; mode=block]
+    status: {code: 404, message: Not Found}
+version: 1
